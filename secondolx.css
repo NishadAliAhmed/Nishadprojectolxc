@@ -1,0 +1,125 @@
+header{
+    margin:auto;
+    margin-top: -9.8%;
+    margin-left: -1%;
+    color: black;
+    padding-top: 1%;
+    padding-left: 1%;
+    background-color: rgb(86, 166, 147);
+    height:80px;
+    width:100%;
+    border: 2px solid black;
+    position: fixed;
+}
+#icon{
+    float:left;
+}
+#icon>img{
+    height:70px;
+    width:100px;
+}
+.dropdown{
+    margin-top:1%;
+    float:left;
+    margin-left:10%;
+    width:75%;   
+}
+.sl{
+    width:150px;
+    height:30px;
+}
+.si{
+    margin-left: 1%;
+    width:200px;
+    height: 30px;
+}
+.lang{
+    margin-left: 1%;
+    width:150px;
+    height:30px;
+}
+a{
+    margin-left: 10%;
+    font-size:20px;
+    font-weight:bold;
+    color:black;
+}
+.filterdiv{
+    margin-top: 10%;
+    margin-left: 2%;
+    border: 2px solid black;
+    height: 400px;
+    width: 200px;
+    
+}
+.contentdiv{
+    margin-top: -27%;
+    margin-left: 20%;
+    border: 2px solid black;
+    height: 600px;
+    width: 1000px;
+    
+}
+.ead{
+    margin-bottom: 2%;
+    margin-left: 2%;
+    border: 2px solid black;
+    height:200px;
+    width:250px;
+    display: inline-block;
+}
+.mobimg>img{
+    height: 100px;
+    width:100%;
+}
+.fimg>img{
+    height: 100px;
+    width:70%;
+} 
+.comimg>img{
+    height: 100px;
+    width:70%;
+}
+.acimg>img{
+    height: 100px;
+    width:70%;
+}
+
+
+
+footer{
+    height:150px;
+    width: 100%;
+    
+    background-color:rgb(86, 166, 147);
+}
+#footertext{
+    text-align: center;
+}
+.footdiv{
+    height: 70px;
+    width: 18%;
+    float: left;
+    border-right: 2px solid black;
+    text-align: center;
+}
+.footdiv>img{
+    height:30px;
+    width: 100px;
+    
+}
+.noborder{
+    border:none;
+}
+.fb{
+    color:rgb(51, 51, 106);
+    font-size: 15px;
+}
+.insta{
+    color:rgb(197, 88, 37);
+    font-size: 15px;
+}
+.yt{
+    color:red;
+    font-size: 15px;
+}
