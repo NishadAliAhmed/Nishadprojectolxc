@@ -3,6 +3,7 @@
     <head>
         <title>OLX</title>
         <link href="firstolx.css" rel="stylesheet" type="text/css"/>
+        <script src="home.js"></script>
         <script src="coupons.js"></script>
     </head>
     <body>
@@ -11,23 +12,17 @@
             <img src="olx logo.png" alt="logo"/>
         </div>
         <div class="dropdown">
-            <select class="sl">
+            <select id="city" class="sl">
                 <option>Select Location</option>
-                <option>Coimbatore</option>
-                <option>Chennai</option>
-                <option>Salem</option>
+                
             </select>
-            <select class="si">
+            <select id="products" class="si">
                 <option>Search Items</option>
-                <option>Furnitures</option>
-                <option>Cars & Bikes</option>
-                <option>Electronics & Appliances</option>
+                
             </select>
-            <select class="lang">
+            <select id="language" class="lang">
                 <option>Languages</option>
-                <option>English</option>
-                <option>Tamil</option>
-                <option>Hindi</option>
+                
             </select>
             <a href="#">Login</a>
             <a href="#">Signup</a>
@@ -47,7 +42,6 @@
                 <button onClick="closeCoupon()">&times;</button>
             </div>
             
-            
             <div class="cate">
                 <span>All Categories</span>
                 <div class="items">
@@ -59,7 +53,6 @@
                                 <li>Mobiles</li>
                                 <li>Computers & Laptops</li>
                                 <li>Ac's</li>
-                                <li>Washing MAchines</li>
                                 <li>Fridges</li>
                             </ol>
                         </div>
@@ -80,13 +73,13 @@
 
                     <div class="ea">
                         <div class="ea1">
-                            <a href="./secondolx.html">Books & Sports Equipments</a>
+                            <a href="./secondolx.html">Books & Sports Items</a>
                             <br />
                             <ol>
                                 <li>Books</li>
                                 <li>Cricket kits</li>
                                 <li>indoor game kits</li>
-                                <li>Other Sport Equioments</li>
+                                <li>Other Sport Equipments</li>
                             </ol>
                         </div>
                     </div>
@@ -104,7 +97,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
+                </div>
+            
 
             <div class="rci">
                 <h1>Fresh Recommendations</h1>
@@ -159,7 +153,64 @@
                         Grip handle for chest press
                     </div>
                  </div>
+
+                 <div class="rci1">
+                    <div class="subrci1">
+                        <img src="cycle image.webp"/>
+                    </div>
+                    <div class="subheading1">
+                        Rs.3,000 
+                        <br>
+                        2019 model
+                        <br>
+                        Hercules
+                    </div>
+                    
                 </div>
+
+                <div class="rci1">
+                    <div class="subrci1">
+                        <img src="camera image.webp"/>
+                    </div>
+                    <div class="subheading1">
+                        Rs.15,000 
+                        <br>
+                        2016 model
+                        <br>
+                        Canon
+                    </div>
+                    
+                </div>
+
+                <div class="rci1">
+                    <div class="subrci1">
+                        <img src="ironbox image.webp"/>
+                    </div>
+                    <div class="subheading1">
+                        Rs.500
+                        <br>
+                        2019 model
+                        <br>
+                        prestige
+                    </div>
+                    
+                </div>
+
+                <div class="rci1">
+                    <div class="subrci1">
+                        <img src="watch image.webp"/>
+                    </div>
+                    <div class="subheading1">
+                        Rs.4,000 
+                        <br>
+                        2019 model
+                        <br>
+                        Apple
+                    </div>
+                    
+                </div>
+                </div>
+                
                 <footer>
                     <p id="footertext">&copy; Edureka</p>
                     <hr/>
@@ -197,8 +248,33 @@
                     window.onload=loadCoupon()
                 </script>
 
-                
+            <script> 
+            var x = document.getElementById("demo"); 
+            function getLocation(){
+                 if (navigator.geolocation){ 
+                    navigator.geolocation.getCurrentPosition(showPosition); 
+                }else{
+                    x.innerHTML="Geolocation is not supported by this browser.";
+                }
+             } 
+            function showPosition(position){ 
+                x.innerHTML="Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+            } 
+            getLocation()
+             
+             </script>   
+             
+             <script>
+                window.onload = getCity()
+             </script>
+
+             <script>
+                window.onload = getProduct()
+             </script>
+
+             <script>
+                window.onload = getLanguage()
+             </script>
                     
-                
-            </body>
+                </body>
     </html>

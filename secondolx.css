@@ -1,4 +1,4 @@
-header{
+ header{
     margin:auto;
     margin-top: -9.8%;
     margin-left: -1%;
@@ -47,7 +47,7 @@ a{
 .filterdiv{
     margin-top: 10%;
     margin-left: 2%;
-    border: 2px solid black;
+    border: 2px solid gray;
     height: 400px;
     width: 200px;
     
@@ -55,15 +55,16 @@ a{
 .contentdiv{
     margin-top: -27%;
     margin-left: 20%;
-    border: 2px solid black;
+    border: 2px solid gray;
     height: 600px;
     width: 1000px;
     
 }
 .ead{
+    box-shadow: 10px 10px 10px;
     margin-bottom: 2%;
     margin-left: 2%;
-    border: 2px solid black;
+    border: 2px solid gray;
     height:200px;
     width:250px;
     display: inline-block;
