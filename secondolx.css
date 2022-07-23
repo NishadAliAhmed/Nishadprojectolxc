@@ -56,14 +56,16 @@ a{
     margin-top: -27%;
     margin-left: 20%;
     border: 2px solid gray;
-    height: 600px;
+    height: 2400px;
     width: 1000px;
+    background-color: rgb(86, 166, 147);
     
 }
 .ead{
     box-shadow: 10px 10px 10px;
     margin-bottom: 2%;
-    margin-left: 2%;
+    margin-left: 5%;
+    margin-top: 3%;
     border: 2px solid gray;
     height:200px;
     width:250px;
